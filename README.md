@@ -1,33 +1,60 @@
 # jf361_ids706_ip1
-[![pipeline status](https://gitlab.com/SeJingjing/jf361_ids706_ip1/badges/main/pipeline.svg?job=install)](https://gitlab.com/SeJingjing/jf361_ids706_ip1/-/commits/main)
-[![pipeline status](https://gitlab.com/SeJingjing/jf361_ids706_ip1/badges/main/pipeline.svg?job=format)](https://gitlab.com/SeJingjing/jf361_ids706_ip1/-/pipelines)
+[![Install](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/install.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/install.yml)
+[![Format](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/format.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/format.yml)
+[![Lint](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/lint.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/lint.yml)
+[![Test](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/test.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/test.yml)
 
- ## Project Introduction
-This project is to create pandas descriptive statistics script.
+### Video Link
+[Watch the video here](https://youtu.be/4voIdhXp2YE)
 
-## Project Requirments
-- Python script using Pandas for descriptive statistics
-- Read a dataset (CSV or Excel)
-- Generate summary statistics (mean, median, standard deviation)
-- Create at least one data visualization
+## Project Introduction
+This project is about continuous integration using GitHub actions of python data science project
+
+## Project Structure
+```angular2html
+project/
+├── .devcontainer/
+│   ├── devcontainer.json
+│   └── Dockerfile
+|
+├── .github/
+│   └── workflows/
+│       ├── install.yml
+│       ├── format.yml
+│       ├── lint.yml
+│       └── test.yml
+|
+├── src/
+│   ├── script.py
+│   └── lib.py
+│
+├── tests/
+│   ├── test_script.py 
+│   └── test_lib.py
+│
+├── analysis.ipynb
+├── Makefile
+├── requirements.txt
+├── README.md
+```
+
+## Project Description
+This project demonstrates how to implement Continuous Integration (CI) for a Python-based data science project using GitHub CI. The project includes functionality for performing descriptive statistics using Pandas, automated testing with the pytest-nbval plugin for Jupyter Notebooks, code formatting, linting, and testing. A Makefile is used to streamline running tasks, while GitHub CI is used to automatically execute these tasks in the pipeline. This ensures high-quality, maintainable code through automated checks and tests.
 
 ## Project Setup
-1. **Read a CSV file** The first step is to read the dataset using Pandas. This allows you to load the data into a DataFrame for further analysis:
-    ```
-   import pandas as pd
-    df = pd.read_csv('data/dataset.csv')
-   ```
-2. **Analyze Summary Statistics**: Pandas provides a convenient method `df.describe()` to generate summary statistics such as count, mean, standard deviation (std), minimum, and maximum for each numeric column in the dataset.
-   ```angular2html
-    analysed_data = df.describe()
-    print(analysed_data)
-    ```
-3. **Visualizing the Data**: Pandas provides a convenient method `df.hist()` to help better understand the data distribution. Histograms are generated for each numeric column.
-    ```
-   df.hist(bins=10, edgecolor='black')
-   ```
-4. **Generate a Report**: The summary statistics and visualizations are compiled into a Markdown report. The detailed code of `create_summary_report()` method is in the `src/main.py` file.
-
+For Mini Project 2 with a similar structure but with added functions for the testing and Makefile.
+1. Formats Python code using `black`
+<p align="center">
+  <img src="screenshots/format.png" />
+</p>
+2. Lints the code using `ruff` to catch any errors or style issues.
+<p align="center">
+  <img src="screenshots/lint.png" />
+</p>
+3. Runs both notebook and script tests using `pytest` with `nbval` to ensure correctness.
+<p align="center">
+  <img src="screenshots/test.png" />
+</p>
 
 ## Project Output
-The markdown summary report is under the `output` dictionary with name `summary_report.md`
+The markdown summary report is under the `output` dictionary with name `summary_report.md`. You can find them here [Summary Report](./output/summary_report.md).
