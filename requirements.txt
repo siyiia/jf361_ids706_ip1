@@ -1,0 +1,9 @@
+pytest
+pandas
+tabulate
+markdown2
+matplotlib
+black
+ruff
+nbval
+black
