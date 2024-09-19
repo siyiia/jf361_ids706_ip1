@@ -5,7 +5,7 @@
 [![Test](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/test.yml/badge.svg)](https://github.com/siyiia/jf361_ids706_ip1/actions/workflows/test.yml)
 
 ### Video Link
-[Watch the video here](https://youtu.be/4voIdhXp2YE)
+[Watch the video here](https://youtu.be/MlAygC5vZME)
 
 ## Project Introduction
 This project is about continuous integration using GitHub actions of python data science project
