@@ -16,14 +16,15 @@ project/
 ├── .devcontainer/
 │   ├── devcontainer.json
 │   └── Dockerfile
-|
+│
+│
 ├── .github/
 │   └── workflows/
 │       ├── install.yml
 │       ├── format.yml
 │       ├── lint.yml
 │       └── test.yml
-|
+│
 ├── src/
 │   ├── script.py
 │   └── lib.py
