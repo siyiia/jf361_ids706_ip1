@@ -32,7 +32,7 @@ project/
 │   ├── test_script.py 
 │   └── test_lib.py
 │
-├── analysis.ipynb
+├── main.ipynb
 ├── Makefile
 ├── requirements.txt
 ├── README.md
@@ -47,10 +47,12 @@ For Mini Project 2 with a similar structure but with added functions for the tes
 <p align="center">
   <img src="screenshots/format.png" />
 </p>
+
 2. Lints the code using `ruff` to catch any errors or style issues.
 <p align="center">
   <img src="screenshots/lint.png" />
 </p>
+
 3. Runs both notebook and script tests using `pytest` with `nbval` to ensure correctness.
 <p align="center">
   <img src="screenshots/test.png" />
